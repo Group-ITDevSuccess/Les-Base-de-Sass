@@ -21,6 +21,8 @@ body, html {
 
 main {
   height: 100vh;
+  background-color: white;
+  color: #333;
 }
 
 .toolbar {
@@ -109,6 +111,8 @@ main {
 .left-content .input-container input {
   border: none;
   font-size: 1rem;
+  background-color: white;
+  color: #333;
 }
 
 .left-content .input-container input:focus {
@@ -128,6 +132,7 @@ main {
 
 .right-content .img-corousel img {
   width: 100%;
+  border-radius: 50%;
 }
 
 .right-content .prev-btn, .right-content .next-btn {
