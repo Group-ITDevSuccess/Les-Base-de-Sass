@@ -1,0 +1,63 @@
+.toolbar, .content-container, .toolbar .img-logo, .toolbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar, .content-container {
+  justify-content: space-between;
+}
+
+body, html {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+}
+
+.toolbar {
+  height: 10%;
+  padding: 0 1rem;
+}
+
+.toolbar .img-logo span {
+  font-size: 1.45rem;
+  margin: 0 0.2rem;
+  margin-top: 0.1 rem;
+}
+
+.toolbar .menu span {
+  margin: 0 1rem;
+}
+
+.toolbar .menu img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.content-container {
+  height: 90%;
+  margin: 0 calc(6vw + 1px);
+}
+
+.left-content {
+  flex-basis: 45%;
+}
+
+.left-content .title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.left-content .sub-title {
+  font-size: 1.25rem;
+}
+
+.left-content .actions {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}

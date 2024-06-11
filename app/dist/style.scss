@@ -1,0 +1,62 @@
+@import 'config';
+@import 'utilities';
+
+body, html {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: $font-family;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+}
+.toolbar{
+    height: 10%;
+    @extend %flex-align-center-space-between;
+    padding: 0 1rem;
+
+    .img-logo{
+        @extend %flex-align-center;
+        span {
+            font-size: $font-size * 0.58;
+            margin: 0 0.2rem;
+            margin-top: 0.1 rem;
+        }
+    }
+    .menu{
+        @extend %flex-align-center;
+        span{
+            margin: 0 1rem;
+        }
+
+        img{
+            width: 40px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.content-container{
+    height: 90%;
+    margin: 0 calc(6vw + 1px);
+    @extend %flex-align-center-space-between;
+}
+.left-content{
+    flex-basis: 45%;
+    
+    .title{
+        margin: 0;
+        font-size: $font-size;
+    }
+
+    .sub-title{
+        font-size: $font-size * 0.5;
+    }
+
+    .actions {
+        display: flex;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
